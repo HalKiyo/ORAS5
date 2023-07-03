@@ -25,10 +25,10 @@ def main():
         sst_coarse_clim, sst_coarse_variance, sst_coarse_std = PRE.standardize(sst_coarse)
         picklepath = PRE.pickledir + f"tos_ORAS5_{m_str}.pickle"
         PRE.save_pickle(picklepath, sst, sst_clim, sst_variance, sst_anom, sst_std,
-                        sst_coarse, sst_coarse_clim, sst_coarse_variance, sst_anom, sst_std,
+                        sst_coarse, sst_coarse_clim, sst_coarse_variance, sst_coarse_anom, sst_coarse_std,
                         save_flag=save_flag)
         PRE.save_npy(m_str, sst, sst_clim, sst_variance, sst_anom, sst_std,
-                     sst_coarse, sst_coarse_clim, sst_coarse_variance, sst_anom, sst_std,
+                     sst_coarse, sst_coarse_clim, sst_coarse_variance, sst_coarse_anom, sst_coarse_std,
                      save_flag=save_flag)
 
 
