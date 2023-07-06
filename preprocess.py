@@ -41,7 +41,7 @@ class Preprocess():
         self.end_year = 2014
         self.tm = 57
         self.datadir = '/work/kajiyama/cdo/ORAS5'
-        self.pickledir = "/work/kajiyama/preprocessed/"
+        self.pickledir = "/work/kajiyama/preprocessed/ORAS5"
         self.npydir = "/work/kajiyama/cnn/transfer_input/tos/"
 
         self.first_file = self.datadir + "/sst_1958_Apr.nc"
